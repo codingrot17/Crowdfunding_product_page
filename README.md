@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/codingrot17/Crowdfunding_product_page)
-- Live Site URL: [Add live site URL here](https://github.com)
+- Solution URL: [solution](https://github.com/codingrot17/Crowdfunding_product_page)
+- Live Site URL: [ live site](https://github.com)
 
 ## My process
 
