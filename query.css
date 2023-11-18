@@ -1,0 +1,203 @@
+@media screen and (max-width: 1300px) {
+    .background .container {
+        max-width: 950px;
+    }
+
+    .main {
+        left: 20%;
+    }
+
+    .main .section.success {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .main {
+        left: 15%;
+    }
+
+    .main .section.success {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .background .container {
+        max-width: 750px;
+    }
+
+    .main {
+        left: 10%;
+    }
+
+    .main .section.success {
+        left: 18%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .background .container {
+        max-width: 700px;
+    }
+
+    .main {
+        left: 15%;
+    }
+
+    .main .section.success {
+        left: 25%;
+        width: 450px;
+    }
+
+    .main .section {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .background .container {
+        max-width: 600px;
+    }
+
+    .main {
+        left: 8%;
+    }
+
+    .main .section.success {
+        left: 18%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .background .container {
+        max-width: 570px;
+    }
+
+    .main {
+        left: 5%;
+        max-width: 550px;
+    }
+
+    .main .section.success {
+        left: 18%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu_bar .menu {
+        display: block;
+    }
+
+    .enter {
+        display: none;
+    }
+
+    .select_pledge .flex {
+        display: block;
+    }
+
+    .flex .pledge_selected {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .background .container {
+        max-width: 500px;
+    }
+
+    .main {
+        left: 10%;
+        max-width: 450px;
+    }
+
+    .main .section.success {
+        left: 15%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .background .container {
+        max-width: 450px;
+    }
+
+    .main {
+        left: 6%;
+    }
+
+    .main .section.success {
+        left: 10%;
+    }
+
+    .master .buttons .bookmark {
+        background: none;
+    }
+
+    .master .buttons .bookmark span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .background .container {
+        max-width: 400px;
+    }
+
+    .main {
+        left: 0;
+        padding: 0 10px;
+    }
+
+    .main .section.success {
+        left: 8%;
+        max-width: 300px;
+    }
+
+    .range .numbers {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .numbers div {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #bebcbc;
+        border-left: none;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .numbers .no_border {
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .background .container {
+        max-width: 350px;
+    }
+
+    .full_main .box .heading {
+        align-items: center;
+        flex-direction: column;
+    }
+    .label_text .pledge_reward div,
+    .label_text .pledge_reward{
+        display: flex;
+        flex-direction: column;
+      }
+}
+
+@media screen and (max-width: 390px) {
+    .background .container {
+        max-width: 320px;
+    }
+}

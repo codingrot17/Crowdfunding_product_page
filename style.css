@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Commissioner", sans-serif;
+  background: #f4f4f4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  color: #656464;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.background {
+  background: url(images/image-hero-desktop.jpg) no-repeat;
+  position: relative;
+  height: 50vh;
+}
+
+.background .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.menu{
+  display: none;
+}
+
+.menu_bar .menu{
+  display: none;
+  cursor: pointer;
+}
+
+.menu_bar .close_menu{
+  display: none;
+  cursor: pointer;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuNav{
+  position: absolute;
+  top: 90px;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 7px;
+  z-index: 999;
+  box-shadow: 4px 10px 40px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.menuNav span{
+  padding: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menuNav span:hover{
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 310px;
+  left: 25%;
+}
+
+.main .section {
+  max-width: 700px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.main .section.master {
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+}
+
+.master .m_text h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.master .m_text p {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.master .m_logo {
+  position: absolute;
+  top: -30px;
+  left: 45%;
+}
+
+
+.master .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.master .buttons .back {
+  padding: 15px 25px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.master .buttons .back:hover,
+.full_main .box .reward button:hover {
+  background-color: #147a74;
+}
+
+.master .buttons .bookmark {
+  display: flex;
+  align-items: center;
+  border: none;
+  font-weight: 700;
+  border-radius: 25px;
+  padding-right: 20px;
+  gap: 15px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.master .buttons .bookmark .normal {
+  position: relative;
+  left: 5px;
+}
+
+.master .buttons .bookmark .grey,
+.master .buttons .bookmark .green {
+  display: none;
+  position: relative;
+  left: 5px;
+}
+
+#mycheckbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.master .buttons .bookmark:hover .grey {
+  display: inline;
+}
+
+.master .buttons .bookmark:hover .normal {
+  display: none;
+  color: #cecdcdb3;
+}
+
+.bookmark_label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#mycheckbox:checked+.bookmark_label~.grey {
+  display: none;
+}
+
+#mycheckbox:checked+.bookmark_label~.normal {
+  display: none;
+}
+
+#mycheckbox:checked+.bookmark_label~.green {
+  display: inline;
+}
+
+.master .buttons .bookmark:hover {
+  color: rgba(46, 46, 46, 0.5);
+}
+
+.master .buttons .bookmark:checked span {
+  background-color: hsl(176, 72%, 28%);
+  display: none;
+}
+
+#mycheckbox:checked+.bookmark_label~span {
+  color: hsl(176, 50%, 47%);
+}
+
+.bookmark img {
+  width: 40px;
+}
+
+.range {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.range .numbers {
+  display: flex;
+  gap: 50px;
+}
+
+.numbers div {
+  padding-left: 30px;
+  border-left: 1px solid #bebcbc;
+}
+
+.numbers div h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+div.numbers div:first-child {
+  padding-left: 0px;
+  border-left: none;
+}
+
+.progress{
+  width: 100%;
+  height: 10px;
+  background-color: #f4f4f4;
+  border-radius: 7px;
+  position: relative;
+}
+
+.progress_bar{
+  max-width: 640px;
+  position: absolute;
+  background-color: #3db5ad;
+  height: 10px;
+  border-radius: 7px;
+  width: 55%;
+}
+
+/* progress {
+  border-radius: 7px;
+  width: 100%;
+  height: 10px;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 7px;
+  background-color: #f4f4f4;
+}
+
+progress::-webkit-progress-value {
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 7px;
+} */
+
+.full_main {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.full_main h2 {
+  margin-bottom: 10px;
+}
+
+.full_main div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.full_main .box,
+.modal .pledge_container {
+  border: 2px solid #e5e5e5;
+  border-radius: 7px;
+  padding: 20px 30px;
+}
+
+.full_main .box .heading,
+.full_main .box .reward {
+  display: flex;
+  justify-content: space-between;
+}
+
+.full_main .box .heading {
+  margin-bottom: 20px;
+}
+
+.full_main .box .heading p {
+  color: hsl(176, 50%, 47%);
+  font-weight: 700;
+}
+
+.full_main .box .reward {
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.full_main .box .reward h3 {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.full_main .box .reward h3 span {
+  font-size: 14px;
+  color: #656464;
+  font-weight: 400;
+}
+
+.full_main .box .reward button {
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.full_main .out p,
+.full_main .out .reward h3 span {
+  color: rgba(99, 99, 99, 0.6);
+}
+
+.full_main .out .reward h3,
+.full_main .out .heading h3 {
+  color: rgba(77, 76, 76, 0.7);
+}
+
+.full_main .out .heading p {
+  color: rgba(61, 181, 173, 0.5);
+}
+
+
+.full_main .out .reward button {
+  background-color: rgba(99, 99, 99, 0.6);
+  cursor:not-allowed;
+}
+
+.full_main .out .reward button:hover {
+  background-color: rgba(99, 99, 99, 0.6);
+}
+
+.modal{
+  position: absolute;
+  top: -150px;
+  display: none;
+  box-shadow: 4px 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal_top div {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.modal .modal_top div h2,
+.modal .modal_top p {
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.modal .pledge{
+  border: 2px solid #e5e5e5;
+  margin: 30px 0px;
+  border-radius: 7px;
+}
+
+.pledge .pledge_container {
+  display: flex;
+  gap:  20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+
+.pledge #firstradiobtn,
+.pledge #secondradiobtn,
+.pledge #thirdradiobtn,
+.pledge #fourthradiobtn
+ {
+  appearance: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid #e5e5e5;
+  padding: 3px;
+  position: relative;
+}
+
+.pledge #firstradiobtn::before,
+.pledge #secondradiobtn::before,
+.pledge #thirdradiobtn::before,
+.pledge #fourthradiobtn::before
+ {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+  background-color: #fff;
+}
+
+.pledge #firstradiobtn:checked::before,
+.pledge #secondradiobtn:checked::before, 
+.pledge #thirdradiobtn:checked::before 
+/* .pledge #fourthradiobtn:checked::before  */
+{
+  transform: translate(-50%, -50%) scale(1);
+  background-color: hsl(176, 50%, 47%);
+}
+
+.pledge #firstradiobtn:hover,
+.pledge #secondradiobtn:hover,
+.pledge #thirdradiobtn:hover
+/* .pledge #fourthradiobtn:hover */
+{
+  border: 2px solid hsl(176, 50%, 47%);
+}
+
+.pledge .label_text{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+.pledge label {
+  cursor: pointer;
+  color: #000;
+  font-weight: 700;
+}
+
+.pledge label:hover{
+  color: hsl(176, 50%, 47%);
+}
+
+.label_text .pledge_reward{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pledge_reward div .green{
+  color: #3db5ad;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.pledge_reward h3{
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 7px; 
+}
+
+.pledge_reward h3 span{
+  color: #656464;
+  font-weight: 400;
+}
+
+.select_pledge{
+  display: none;
+}
+
+.rule{
+  width: 100%;
+  height: 2px;
+  background-color: #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.select_pledge .flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.flex .pledge_selected{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.pledge_selected .input{
+  border: 2px solid #e6e6e6;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  max-width: 90px;
+  cursor: pointer;
+}
+
+.pledge_selected .input input{
+  border: none;
+  width: 100%;
+  outline: none;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.pledge_selected .continue .continue_btn{
+  padding: 15px 25px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pledge_selected .continue .continue_btn:hover{
+  background-color: #147a74;
+}
+
+.pledge .blank{
+  cursor: not-allowed;
+}
+
+.blank #fourthradiobtn{
+  cursor: not-allowed;
+}
+
+.blank label {
+  cursor: not-allowed;
+  color: #bebcbc;
+  font-weight: 700;
+}
+
+.blank label:hover{
+  color: #bebcbc;
+}
+
+.blank div .green{
+  color: #3db5ad71;
+}
+
+.blank h3{
+  color: rgba(99, 99, 99, 0.7)
+}
+
+.blank p,
+.blank h3 span
+{
+  color: rgba(99, 99, 99, 0.5)
+}
+
+.main .section.success{
+  display: none;
+  /* display: flex; */
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 550px;
+  line-height: 1.5;
+  position: fixed;
+  bottom: 100px;
+  box-shadow: 4px 10px 40px rgba(0, 0, 0, 0.2);
+  left: 430px;
+}
+
+.success img{
+  margin-bottom: 30px;
+}
+
+.success h3{
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.success button{
+  padding: 15px 30px;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px; 
+}
+
+.success button:hover{
+  background-color: #147a74;
+}

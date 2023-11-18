@@ -1,0 +1,16 @@
+<svg width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#147a74" cx="28" cy="28" r="28"/><path fill="#ffffff" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
+<!-- 
+    <!DOCTYPE html>: "It's used for declaring html and it tells us the version of html we are working on";
+
+    N.B:"note that we have two types of html elements tag: we have the self closing tag and the non self closing tags", "The self closing tags are the tags that doesn't requires a closing tag but non-self closing tag requires"
+
+    <html>: ('a non-self closing tag'), The <html> HTML element represents top-level element of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
+
+    <head>:The head is and element that contains informations about the website, it contain the title and the meta data of the website.
+    
+    <title>:The <title> HTML element defines the document's title that is shown in a browser's title bar or a page's tab. It contains text, favicons.
+
+    <body>:The <body> HTML element represents the visible content of an HTML document. There can be only one <body> element in a document.
+
+    
+-->
